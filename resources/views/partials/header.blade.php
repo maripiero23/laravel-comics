@@ -1,62 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <body>
-        <header>
-            <nav class="navbar fixed-top d-flex bg-white">
-                <div class="container">
-                    <div class="dc-logo">
-                        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
-                    </div>
-                    <div class="">
-                        <ul class="navbar nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CHARACTERS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">COMICS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MOVIES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TV</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">GAMES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">COLLECTIBLES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">VIDEOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FAN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">NEWS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SHOP</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="search">
-                            <input type="search" placeholder="Search" class="rounded">
-                    </div>
+<header>
+    <div class="bg-primary d-flex justify-content-end text-white fw-semibold">
+        <div class="me-5">DC POWER VISA</div>
+        <div class="me-5">ADDICTIONAL DC SITES</div>
+    </div>
+    <nav class="bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="{{route("home")}}"><img class="img-fluid" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt=""></a>
                 </div>
-            </nav>
-            <div>
+                <div class="nav-list">
+                    <ul class="d-flex fw-semibold gap-4">
+                        @foreach($arrayHeader as  $headerLink)
+                        <li class="list-item">{{$headerLink}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <form class="d-flex" role="search">
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                </form>
 
             </div>
-        </header>
-    </body>
-</html>
 
+        </div>
+
+    </nav>
+</header>
