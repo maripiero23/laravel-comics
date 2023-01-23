@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <footer>
+    <footer id="foot-bg">
         
         <div class="container pt-5">
             <div class="row">
                 <div class="col-6">
-                    <div class="row d-flex gap-3">
+                    <div class="row d-flex gap-3 py-3">
                         <div class="col-3 text-white">
                             <div class="title-footer">
                                 <h5 class="fs-semibold text-white">DC COMICS</h5>

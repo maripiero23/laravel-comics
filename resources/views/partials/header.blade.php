@@ -9,7 +9,7 @@
 <body>
     <body>
         <header>
-            <nav class="navbar fixed-top d-flex">
+            <nav class="navbar fixed-top d-flex bg-white">
                 <div class="container">
                     <div class="dc-logo">
                         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
@@ -53,6 +53,9 @@
                     </div>
                 </div>
             </nav>
+            <div>
+
+            </div>
         </header>
     </body>
 </html>

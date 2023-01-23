@@ -1,7 +1,65 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-.sign-icons-section{
-    background-color: black;
+.list-item{
+    list-style: none;
+}
 
+
+header .list-item a:hover {
+    border-bottom: 4px solid #0d6efd;
+    color: #0d6efd !important;
+    padding-bottom: 3.2rem;
+}
+
+.dc-logo-bg{
+    margin-top: -110px;
+    margin-bottom: -200px;
+    padding-left: 200px;
+
+}
+
+
+.footer-bg{
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.jumbotron-bg{
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+}
+
+.current-text{
+    margin-top: -30px;
+}
+
+.img-card{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
+}
+
+.brand-img{
+    display: block;
+    width: 50px;
+}
+
+
+
+
+.sign-icons-section{
+    background-color: rgba(48,48,48,255);
+
+}
+
+#foot-bg{
+    background-image: url("../img/footer-bg.jpg");
 }

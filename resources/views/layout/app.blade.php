@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    @include('partials.header')
-    @include('partials.footer')
+    {{-- Viene caricato il JS ed anche il file app.scss --}}
+    @vite('resources/js/app.js') 
 </head>
 <body>
+    {{-- header --}}
+    @include('partials.header1')
+    
+    {{-- contenuto --}}
+    @yield('content')
+    
+    {{-- footer --}}
+    @include('partials.footer1')
     
 </body>
 </html>
+

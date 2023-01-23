@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', function (){
+    
+    $arrayHeader = config('arrayHeader');
+    $arrayFooter = config('arrayFooter');
+    $iconsFooter = config('iconsFooter');
+    $comics = config('comics');
+    $brands = config('brands');
+
+
+    return view('home', [
+        "arrayHeader" => $arrayHeader,
+        "arrayFooter" => $arrayFooter,
+        "iconsFooter" => $iconsFooter,
+        "comics" => $comics,
+        "brands" => $brands,
+
+
+    ]);
+})->name("home");
